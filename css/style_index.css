@@ -1,0 +1,146 @@
+/*
+    created by: Brandell Cassio (brandellc)
+*/
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+* { margin : 0%; }
+html {font-size: 20px; }
+
+html, body , #wrap {
+    height: 100%;
+}
+
+body{
+    font-family: 'Exo', Times, sans-serif;
+    background: #EEE;
+}
+/* hack to put footer*/
+body > #wrap { height: auto; min-height:100%; }
+
+.header_home{
+    padding-bottom: 1%;   
+    padding-top: .5%;   
+    background: #B6C800;
+    color: #FFF;
+}
+
+.header_home ul li { display: inline; }
+
+.footer_home{
+    background: #B6C800;
+    text-align: center;
+    color:#fff;
+}
+
+.content_home{
+    margin: auto;
+    overflow: auto;
+    height:auto;
+    width:100%;    
+}
+
+.content_home h2{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.content_home h3{
+    margin-left: 3%;
+}
+
+.comictitle {
+    font-size: 2em;
+    font-family: 'Cookie', cursive;
+    font-style: italic;
+}
+
+.comicnews {
+    font-size: 1.4em;
+    font-family: 'FreeMono', monospace;
+    font-weight: lighter;
+}
+.top_news{
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+#btncad {
+    text-decoration:none;
+    margin-left: 62%;
+    font-size:1.1em;
+    background: #FF6600;
+    color: #fff;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #FF6600;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 0.7%;
+    padding-right: 0.7%;
+}
+
+#btncad:hover{
+    color: #FF6600;
+    background: #fff;
+}
+.ntable{
+    display: block;
+}
+
+.ntablerow{
+    display: both;
+}
+
+.nleft, .nright{
+    float:left;
+    overflow: hidden;
+    width:60%;
+    text-align: justify;
+    padding-bottom: 0.8%;
+}
+
+.nleft{
+    width: 10%;
+}
+
+.top_news img{
+    margin-top: 3%;;
+    max-width: 5.2em;
+    max-height: 5.2em;
+    clear:both;
+}
+
+.top_news:after{
+    visibility: hidden;
+    display: block;
+    clear:both;
+    height: 0;
+    content: " ";
+}
+.nright p{
+   
+    font-size: 0.8em;
+}
+
+.nright a{
+    text-decoration: none;
+    margin-left:67%;
+    padding: 0.5% 0.7% 0.5% 0.7%;
+    font-size:0.9em;
+    background: #005ce6;
+    color: #fff;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #005ce6;
+}
+
+.nright a:hover{
+    background: #fff;
+    color: #005ce6;
+    border-style: solid;
+    border-color: #005ce6;
+}
+

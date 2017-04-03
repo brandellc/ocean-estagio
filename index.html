@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        
+        <title>Commic News</title>
+        <link rel="stylesheet" href="css/style_index.css" type="text/css"/>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-cookies.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body ng-app="newsApp" ng-controller="newsController" ng-init="getHotNews()">
+        <div id="wrap">
+            <div class="header_home" >
+                <ul>
+                    <li class="comictitle"> Comics </li>
+                    <li class="comicnews"> news </li>
+                </ul>     
+            </div>
+            <div class="content_home" >
+                <h2>Bem vindo ao portal de Notícias !</h2>
+                <h3>Notícias mais recetens: </h3>
+                <a href="cadastrar.html" id="btncad">Para cadastrar uma Noticia Clique Aqui !</a>
+                <div class="top_news" ng-repeat="nItem in nArray" ng-model="nArray" >
+                        <div class="ntable">
+                            <div class="ntablerow">
+                                <div class="nleft">
+                                     <img src={{nItem.img}} />
+                                </div>
+                                <div class="nright">
+                                    <h4>{{ nItem.title }}</h4>
+                                    <h5>{{ nItem.author }}</h5>
+                                    <p>{{ nItem.snippet }} ...</p>
+                                    <a href="visualizar.html" ng-click="putData(nItem)"> Clique para saber mais >> </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_home">
+          <p>Created by Brandell Cassio - Contest Estágio Ocean </p>
+        </div>
+    </body>
+</html>

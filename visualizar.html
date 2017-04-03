@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Comic News</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-cookies.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body ng-app="newsApp" ng-controller="newsController" ng-init="retriveData()">
+    <div class="header_view">
+        <ul>
+            <li class="comictitle"> Comics </li>
+            <li class="comicnews"> news </li>
+        </ul>     
+    </div>
+    <div class="content">
+            <img id="img_content" src="{{news.img}}" />
+            <h1 id="title_content">{{ news.title  }}</h1>
+            <h5 id="author_content">{{ news.author }}</h5>
+            <div id="descript_content"> 
+                <p>
+                    {{ news.description }}
+                </p>
+            </div>
+            
+    </div>
+    <div class="footer">
+    </div>
+    </body>
+</html>

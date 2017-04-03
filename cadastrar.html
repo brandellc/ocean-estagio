@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Comics News - Cadastrar Notícia </title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-cookies.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body ng-app="newsApp" >
+        <div wrapper="wrapper">
+            <div class="header_form">
+                <ul>
+                    <li class="comictitle"> Comics</li>
+                    <li class="comicnews"> news</li>
+                </ul>
+            </div>
+        
+            <div class="content_form" ng-controller="newsController" >
+                <form name="newsForm" method="POST" >
+                    <h2>Formulário de Cadastro de Notícia</h2>
+                    <h4>Preencha este formulário para cadastra uma notícia neste site ! Lembre-se de preencher todos os campos !</h4>
+                    <label for="txtauthor">Autor: </label><br />
+                    <input type="text" id="txtauthor" name="author" required ng-model="news.author"/><br />
+                    <label for="txttitle">Título: </label><br />
+                    <input type="text" id="txttitle" name="title" required ng-model="news.title" /><br />
+                    <label for="txtimg">URL foto:</label><br/>
+                    <input type="text" size=100 id="txtimg" name="txtimg" ng-model="news.img" /><br/>
+                    <label for="txtadescription">Descrição: </label><br />
+                    <textarea  id="txadescription" name="description" 
+                        required ng-model="news.description" rows="20" cols="50" ></textarea><br />
+                    <input type="submit" value="Enviar Dados" ng-click="submit()" class="btnSend"/>
+                    <input type="button" value="Limpar Dados" ng-click="reset()" class="btnClear"/>
+                                       
+                </form>
+            </div>
+        </div>
+        <div class="footer_form">
+            <p>Created By Brandell - Contest Estágio Ocean </p>
+        </div>
+    </body>
+</html>
