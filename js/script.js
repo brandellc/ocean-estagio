@@ -11,7 +11,6 @@ newsApp.controller('newsController', function($scope, $http, $window, $cookies){
 
     $scope.submit = function(){
         var obj = $scope.news;
-        obj.img = '';
         obj.date = new Date();
         obj.type = 1;
         $http.post('php/newsController.php',obj).

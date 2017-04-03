@@ -67,6 +67,9 @@ body > #wrap { height: auto; min-height:100%; }
     margin-left: 3%;
 }
 
+.top_news h5 {
+    color: #B6C800;
+}
 #btncad {
     text-decoration:none;
     margin-left: 62%;
